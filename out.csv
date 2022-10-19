@@ -1,0 +1,21 @@
+Author Name,Ticker Name,Category,Line Item,Year,Period,Estimate/Actual,Value
+sample@sample.com,BIGC US Equity,Income Statement Inputs,Revenue,2018,FY,Actual,91.867
+sample@sample.com,BIGC US Equity,Income Statement Inputs,Revenue,2019,FY,Actual,112.103
+sample@sample.com,BIGC US Equity,Income Statement Inputs,Revenue,2020,FY,Actual,152.368
+sample@sample.com,BIGC US Equity,Income Statement Inputs,Revenue,2021,FY,Estimate,197.5384303
+sample@sample.com,BIGC US Equity,Income Statement Inputs,Revenue,2022,FY,Estimate,254.7535894
+sample@sample.com,BIGC US Equity,Income Statement Inputs,Revenue,2023,FY,Estimate,318.9550221
+sample@sample.com,BIGC US Equity,Income Statement Inputs,Revenue,2024,FY,Estimate,391.7673651
+sample@sample.com,BIGC US Equity,Income Statement Inputs,COGS (ex D&A),2018,FY,Actual,21.937
+sample@sample.com,BIGC US Equity,Income Statement Inputs,COGS (ex D&A),2019,FY,Actual,27.023
+sample@sample.com,BIGC US Equity,Income Statement Inputs,COGS (ex D&A),2020,FY,Actual,34.126
+sample@sample.com,BIGC US Equity,Balance Sheet Inputs,Cash & Short-Term Investments,2018,FY,Actual,36.16
+sample@sample.com,BIGC US Equity,Balance Sheet Inputs,Cash & Short-Term Investments,2019,FY,Actual,7.795
+sample@sample.com,BIGC US Equity,Balance Sheet Inputs,Cash & Short-Term Investments,2020,FY,Actual,219.447
+sample@sample.com,BIGC US Equity,Cash Flow Statement Inputs,Depreciation & Amortization,2018,FY,Actual,10.341
+sample@sample.com,BIGC US Equity,Cash Flow Statement Inputs,Depreciation & Amortization,2019,FY,Actual,2.569
+sample@sample.com,BIGC US Equity,Cash Flow Statement Inputs,Depreciation & Amortization,2020,FY,Actual,3.084
+sample@sample.com,BIGC US Equity,Cash Flow Statement Inputs,Depreciation & Amortization,2021,FY,Estimate,2.8446
+sample@sample.com,BIGC US Equity,Cash Flow Statement Inputs,Change in Net Working Capital,2021,FY,Estimate,-1.925190213
+sample@sample.com,BIGC US Equity,Cash Flow Statement Inputs,Change in Net Working Capital,2022,FY,Estimate,-5.147672185
+sample@sample.com,BIGC US Equity,Cash Flow Statement Inputs,Change in Net Working Capital,2023,FY,Estimate,-6.535871746
