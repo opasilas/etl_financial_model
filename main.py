@@ -1,6 +1,9 @@
 import psycopg2
 import os
 import pandas as pd
+import transform
+
+author_mail = transform.data_transformation()
 
 
 green_color = "\033[92m%s\033[0m"
@@ -46,7 +49,7 @@ def create_table():
 
     print(green_color % "Table created successfully")
 
-def load_table_with_data(source_path, table, conn=conn):
+def load_table_with_data(source_path: str, table: str):
     file = pd.read_excel(source_path)
 
     # conn.set_session(autocommit=True)
@@ -70,11 +73,11 @@ def load_table_with_data(source_path, table, conn=conn):
         except psycopg2.InterfaceError as e:
             print(e)
     
-    b = 'The model has been successfully uploaded. Thank you'
-    t = 'MODEL UPLOAD'
+    sub = 'MODEL UPLOAD'
+    bod = 'The model has been successfully uploaded. Thank you'
     
     print(green_color % "Table updated successfully")
-    send_email('opasilas1@gmail.com','cdkvycjaeiqeweiy', 'silasopawoye@gmail.com', t, b)
+    send_email('user_mail','pwd', author_mail, sub, bod)
     print(green_color % "Email has been sent to author")
 
 
@@ -87,7 +90,7 @@ def update_table(table, updated_model_path):
     load_table_with_data(updated_model_path, table)
 
 
-def clear_table(table):
+def clear_table(table: str):
     query = '''
             TRUNCATE {} RESTART IDENTITY
     '''.format(table)
@@ -122,8 +125,9 @@ def send_email(user, pwd, recipient, subject, body):
 
 if __name__ == "__main__":
     create_table()
-    path = "C:\\Users\\USER\\Downloads\\sagacious telegram task\\Output (1) (1).xlsx"
+    path = "out.csv"
     load_table_with_data(path, 'financial_model')
+
     # clear_table('financial_model')
     # send_email('opasilas1@gmail.com','cdkvycjaeiqeweiy', 'silasopawoye@gmail.com', t, b)
     # update_table('financial_model', path)
